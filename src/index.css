@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.clock{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #449cb3;
+  position: relative;
+  top: 15%;
+  left: 4.8%;
+  margin-top: 15%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: inset 6px -6px 9px #1f9b48,
+              inset -4px 4px 9px #a33e3e,
+              inset -4px 4px 9px #241111,
+              inset 4px -4px 9px #580909;
+}
+.digital {
+  position: absolute;
+  top: 30px;
+  color:  rgb(153, 29, 29);
+  width: 29%;
+}
+.face {
+  position:relative;
+  background-image: url("img/small.jpeg");
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: inset 4px -4px 9px #f8f1f1,
+  inset -4px 4px 9px #948f8f,
+  inset 10px 10px 9px #271b1b,
+  inset -10px 10px 9px #3b1111 ;
+}
+.hand{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  transform-origin:center top;
+  border-radius: 40%;
+}
+.second {
+  height: 70px;
+  width: 2px;
+  background-color: rgb(50, 89, 196);
+  z-index: 5;
+  box-shadow:inset -5px .5px 1px #0c0c0c,
+  inset .5px -.5px 1px #8d8282;
+}
+.minute {
+  height: 65px;
+  width: 3px;
+  background-color: rgb(153, 100, 100);
+  z-index: 4;
+  box-shadow:inset -.5px .5px 1px #0c0c0c,
+  inset .5px -.5px 1px #8d8282;
+}
+.hour {
+  height: 50px;
+  width: 4px;
+  background-color: rgb(189, 29, 29);
+  z-index: 3;
+  box-shadow:inset -4px 4px 9px #0c0c0c,
+  inset 4px -4px 9px #8d8282, ;;
+}
+.center{
+  height: 25px;
+  width: 25px;
+  background-color: rgb(202, 56, 46);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 6;
+  box-shadow:inset 3px -3px 4px #0c0c0c,
+  inset -3px 3px 4px #8d8282, ;;
 }
